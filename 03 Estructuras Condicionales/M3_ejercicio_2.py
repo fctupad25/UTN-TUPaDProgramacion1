@@ -1,10 +1,10 @@
 # Ejercicio 2: Identificador de vocales
 
-letra_usuario = input("Introduce una letra: ") 
-letra_usuario = letra_usuario.upper() 
+letra_usuario = input("Introduce una letra: ")  # Solicita al usuario una letra
+letra_usuario = letra_usuario.upper()           # Transforma la letra a mayuscula
 
 
-if letra_usuario in ['A', 'E', 'I', 'O', 'U']:
+if letra_usuario in ['A', 'E', 'I', 'O', 'U']:  # Revisa que la letra sea vocal
     print("La letra ingresada es una vocal")
 else:
     print("La letra ingresada no es una vocal")

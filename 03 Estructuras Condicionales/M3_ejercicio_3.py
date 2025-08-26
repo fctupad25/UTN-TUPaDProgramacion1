@@ -9,9 +9,9 @@
 # 3. Si es negativo, imprime: "El número es negativo".
 # 4. Si es cero, imprime: "El número es cero".
 
-numero_usuario = input("Introduce un número: ") 
+numero_usuario = input("Introduce un número: ")  # Solicita al usuario un numero
 
-if numero_usuario > 0:
+if numero_usuario > 0:                           # Revisa que el numero sea mayor, menor o igual a 0
     print("El número es positivo")
 elif numero_usuario < 0:
     print("El número es negativo")

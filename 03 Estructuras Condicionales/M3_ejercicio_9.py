@@ -9,13 +9,13 @@
 # o Si falta número: "...al menos un número.".
 
 
-contrasena_segura = input("Crea la contraseña: ")  
+contrasena_segura = input("Crea la contraseña: ")                               # Solicita al usuario una contraseña
 
-longitud_valida = 8 <= len(contrasena_segura) <= 20
+longitud_valida = 8 <= len(contrasena_segura) <= 20                             # Evalua la contraseña
 tiene_mayuscula = any(caracter.isupper() for caracter in contrasena_segura)
 tiene_numero = any(caracter.isdigit() for caracter in contrasena_segura)
 
-if longitud_valida and tiene_mayuscula and tiene_numero:
+if longitud_valida and tiene_mayuscula and tiene_numero:                        # A partir de la evaluacion determina puntos a mejorar o si es segura
     print("¡Felicitaciones! Creaste tu contraseña.")
 
 else:

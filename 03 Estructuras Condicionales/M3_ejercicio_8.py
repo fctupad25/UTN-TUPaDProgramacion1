@@ -11,13 +11,13 @@
 # 4. Si no, imprime: "La contraseña no es segura.".
 
 
-contrasena_segura = input("Crea la contraseña: ")  
+contrasena_segura = input("Crea la contraseña: ")                                # Solicita al usuario una contraseña
 
-longitud_valida = 8 <= len(contrasena_segura) <= 20
+longitud_valida = 8 <= len(contrasena_segura) <= 20                              # Evalua la contraseña
 tiene_mayuscula = any(caracter.isupper() for caracter in contrasena_segura)
 tiene_numero = any(caracter.isdigit() for caracter in contrasena_segura)
 
-if longitud_valida and tiene_mayuscula and tiene_numero:
+if longitud_valida and tiene_mayuscula and tiene_numero:                         # Determina si es segura o no dependiendo de la evaluacion previa
     print("¡Felicitaciones! Creaste tu contraseña.")
 else:
     print("La contraseña no es segura.")

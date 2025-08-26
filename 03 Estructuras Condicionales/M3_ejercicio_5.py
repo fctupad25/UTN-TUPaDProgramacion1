@@ -7,9 +7,9 @@
 # 3. Si está entre 10°C y 25°C, imprime: "Está templado".
 # 4. Si es > 25°C, imprime: "Hace calor".
 
-temperatura = float(input("Introduce a temperatura actual: ")) 
+temperatura = float(input("Introduce a temperatura actual: "))     # Solicita al usuario un numero y lo transforma en tipo float
 
-if temperatura <= 10:
+if temperatura <= 10:                                              # Evalua la temperatura
     print("Hace frío")
 elif temperatura > 10 and temperatura < 25:
     print("Está templado")

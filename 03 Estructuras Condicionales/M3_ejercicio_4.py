@@ -7,10 +7,10 @@
 # 3. Si el primero es menor, imprime: "El primer número ingresado es menor".
 # 4. Si son iguales, imprime: "Los números ingresados son iguales".
 
-numero_1 = float(input("Introduce un número: "))
-numero_2 = float(input("Introduce un segundo número: ")) 
+numero_1 = float(input("Introduce un número: "))            # Solicita al usuario un numero
+numero_2 = float(input("Introduce un segundo número: "))    # Solicita al usuario un segundo numero
 
-if numero_1 > numero_2:
+if numero_1 > numero_2:                                     # Compara ambos numeros
     print("El primer número ingresado es mayor")
 elif numero_1 < numero_2:
     print("El segundo número ingresado es mayor")

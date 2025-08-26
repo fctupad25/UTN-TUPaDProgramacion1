@@ -8,10 +8,10 @@
 # 3. Imprime: "GANA JUGADOR 1", "GANA JUGADOR 2" o "EMPATE".
 
 
-jugador1 = input("Jugador 1, elige tu jugada (piedra, papel o tijera): ").lower()
-jugador2 = input("Jugador 2, elige tu jugada (piedra, papel o tijera): ").lower()
+jugador1 = input("Jugador 1, elige tu jugada (piedra, papel o tijera): ").lower()       # Solicita al usuario 1 una jugada
+jugador2 = input("Jugador 2, elige tu jugada (piedra, papel o tijera): ").lower()       # Solicita al usuario 2 una jugada
 
-if jugador1 == jugador2:
+if jugador1 == jugador2:                                                                # Determina el resultado de la intereaccion dependiendo de cada jugada elegida o si es una jugada invalida
     print("EMPATE")
 elif jugador1 == "piedra":
     if jugador2 == "papel":
