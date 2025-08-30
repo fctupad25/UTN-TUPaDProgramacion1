@@ -10,12 +10,11 @@ dia = int(input("Introduce el dia: "))                                          
 
 hemisferio = hemisferio.upper()
 
+if (mes > 0 and mes < 13) and (dia >0 and dia < 31):                                    # Chequea que el dia y mes sea valido
 
-if (mes > 0 and mes < 13) and (dia >0 and dia < 31):
-
-    if  hemisferio == 'N':                                                                  # Determina hemisferio en el que se encuentra (N/S)
+    if  hemisferio == 'N':                                                              # Determina hemisferio en el que se encuentra (N/S)
         
-        if (mes == 12 and dia >= 21) or (mes in [1, 2]) or (mes == 3 and dia <= 20):        # Solicita al usuario el dian
+        if (mes == 12 and dia >= 21) or (mes in [1, 2]) or (mes == 3 and dia <= 20):        
             print("Invierno")
         elif (mes == 3 and dia >= 21) or (mes in [4, 5]) or (mes == 6 and dia <= 20):
             print("Primavera")    

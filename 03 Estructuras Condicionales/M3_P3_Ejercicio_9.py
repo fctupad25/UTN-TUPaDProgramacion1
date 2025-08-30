@@ -11,11 +11,9 @@
 # ● Mayor o igual que 7: "Extremo" (puede causar graves daños a gran escala).
 
 
-
-
 terremoto = float(input("Introduce la magnitud de un terremoto: "))            # Solicita al usuario la magnitud de un terremoto
 
-if  terremoto < 3:                                     # Compara la edad con la edad minima numeros
+if  terremoto < 3:                                                             # A partir de la magnitud, determina la gravedad del terremoto
     print("Muy leve")
 elif terremoto < 4: 
     print("Leve")
